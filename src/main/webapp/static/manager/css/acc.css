@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+.content_div
+{
+	height:800px;
+	margin-top:10px;
+}
+.back_color
+{
+	background-color:#4F81BD;
+	text-align:center;
+}
+.text_center
+{
+	text-align:center;
+}
