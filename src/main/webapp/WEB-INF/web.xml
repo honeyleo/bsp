@@ -11,7 +11,7 @@
 
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring.xml,classpath:spring-dao.xml,classpath:spring-quartz.xml,classpath:manager/business-config.xml, classpath:manager/tools-config.xml</param-value>
+		<param-value>classpath:spring/spring.xml,classpath:spring/spring-dao.xml,classpath:spring/spring-quartz.xml,classpath:manager/business-config.xml, classpath:manager/tools-config.xml</param-value>
 	</context-param>
 
 	<listener>
@@ -91,7 +91,7 @@ see here: http://static.springsource.org/spring/docs/current/spring-framework-re
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
-                classpath:spring-mvc-rest.xml
+                classpath:spring/spring-mvc-rest.xml
             </param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
@@ -109,7 +109,7 @@ see here: http://static.springsource.org/spring/docs/current/spring-framework-re
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
 			<param-value>
-                classpath:spring-mvc-view.xml
+                classpath:spring/spring-mvc-view.xml
             </param-value>
 		</init-param>
 		<load-on-startup>2</load-on-startup>

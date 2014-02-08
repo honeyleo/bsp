@@ -186,7 +186,7 @@ $(function(){
       </div>
     </div>
   </div>
-  <div id="footer">Copyright &copy; 2013&nbsp;&nbsp;汇智游戏推广平台</div>
+  <div id="footer">Copyright &copy; 2013&nbsp;&nbsp;基础服务平台</div>
   <input id="dmbi" type="hidden" value="<c:out value="${sessionScope.SESSION_DMBI}" />"/>
 </body>
 </html>

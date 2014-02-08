@@ -10,12 +10,12 @@
 <html>
   <link href="<%= basePath%>static/manager/themes/css/login.css" rel="stylesheet" type="text/css" />
   <head>    
-    <title>应用推广管理后台</title>
+    <title>基础服务平台管理后台</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">    
     <meta http-equiv="keywords" content="">
-    <meta http-equiv="description" content="应用推广管理后台">
+    <meta http-equiv="description" content="基础服务平台管理后台">
     <script src="<%= basePath%>static/manager/js/jquery-1.4.4.min.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	<!--
@@ -35,7 +35,7 @@
       </h1>
       <div class="login_headerContent">
         
-        <h1 style="font-size:250%" class="login_title">应用推广</h1>
+        <h1 style="font-size:250%" class="login_title">基础服务平台</h1>
       </div>
     </div>
     <div id="login_content">
@@ -68,7 +68,7 @@
       </div>
     </div>
     <div id="login_footer">
-      Copyright &copy; 2013 www.ihuizhi.com Inc. All Rights Reserved.
+      Copyright &copy; 2013 www.bsp.com Inc. All Rights Reserved.
     </div>
   </div>
 </body>
