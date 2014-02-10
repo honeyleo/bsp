@@ -117,7 +117,7 @@ see here: http://static.springsource.org/spring/docs/current/spring-framework-re
 
 	<servlet-mapping>
 		<servlet-name>spring-view</servlet-name>
-		<url-pattern>/oauth/*</url-pattern>
+		<url-pattern>/view/*</url-pattern>
 	</servlet-mapping>
 
 	<servlet>

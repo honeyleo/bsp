@@ -13,7 +13,7 @@
     <result column="state" property="state" jdbcType="INTEGER" />
     <result column="createTime" property="createTime" jdbcType="TIMESTAMP" />
   </resultMap>
-  
+  <cache flushInterval="1800000" size="1024" readOnly="true" eviction="LRU"></cache>
   <sql id="Example_Where_Clause" >
     <trim prefix="where" prefixOverrides="and|or" >
       <if test="condition.username != null" >
@@ -130,7 +130,7 @@
     where id = #{id}
   </update>
   
-  <select id="selectByUsername" resultMap="BaseResultMap" parameterType="java.lang.String" >
+  <select id="selectByUsername" resultMap="BaseResultMap" parameterType="java.lang.String" useCache="true">
     select 
     <include refid="Base_Column_List" />
     from admin where username = #{username} limit 1
