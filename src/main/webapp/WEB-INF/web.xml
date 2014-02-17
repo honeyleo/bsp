@@ -3,7 +3,7 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
-	<display-name>wsso</display-name>
+	<display-name>bsp</display-name>
 
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -54,7 +54,7 @@ see here: http://static.springsource.org/spring/docs/current/spring-framework-re
     <filter>
 		<description>管理系统登录验证</description>
 		<filter-name>LoginFilter</filter-name>
-		<filter-class>net.bsp.manager.web.filter.LoginFilter</filter-class>
+		<filter-class>com.manager.web.filter.LoginFilter</filter-class>
 		<init-param>
 			<param-name>ignoreUrl</param-name>
 			<param-value>/manager/adm_login;/manager/login_dialog;/manager/loginout;/manager/dologin</param-value>

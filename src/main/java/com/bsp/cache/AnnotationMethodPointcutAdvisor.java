@@ -19,7 +19,7 @@ import org.springframework.core.Ordered;
  * 
  * Revision History
  */
-@SuppressWarnings("serial")
+@SuppressWarnings({ "serial", "rawtypes", "unchecked" })
 public class AnnotationMethodPointcutAdvisor extends
         StaticMethodMatcherPointcut implements Serializable, PointcutAdvisor,
         Ordered {
@@ -61,8 +61,7 @@ public class AnnotationMethodPointcutAdvisor extends
                 "perInstance property of Advisor is not yet supported in Spring");
     }
 
-    @SuppressWarnings("unchecked")
-    public boolean matches(Method method, Class targetClass) {
+	public boolean matches(Method method, Class targetClass) {
         return method.getAnnotation(annotationCls) != null;
     }
 

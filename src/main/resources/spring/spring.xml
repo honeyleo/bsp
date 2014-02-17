@@ -25,16 +25,9 @@
 	<bean id="redisBase" class="com.bsp.core.cache.RedisBase"/>
 	
 	<!-- 缓存配置 -->
-	<bean id="cacheManager"
-		class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
-		<property name="configLocation">
-			<value>classpath:spring/ehcache/ehcache.xml</value>
-		</property>
-	</bean>
-	
 	<bean id="cacheProvider" class="com.bsp.cache.CacheProvider">
 		<property name="cacheManager">
-			<ref local="cacheManager" />
+			<ref local="ehcache" />
 		</property>
 	</bean>
 	

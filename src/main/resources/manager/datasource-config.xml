@@ -50,7 +50,7 @@
 	</bean>
 
 	<bean name="manager_mapper" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="net.bsp.manager.dao" />
+		<property name="basePackage" value="com.manager.dao" />
 		<property name="sqlSessionFactory" ref="sqlSessionFactory_1"/>
 	</bean> 
 

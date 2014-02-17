@@ -8,63 +8,63 @@
  
  <function>
   <name>getSessionLoginUser</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
-  <function-signature>net.bsp.manager.model.Admin getSessionLoginUser(javax.servlet.http.HttpSession)</function-signature>
+  <function-class>com.manager.common.web.Funcs</function-class>
+  <function-signature>com.manager.model.Admin getSessionLoginUser(javax.servlet.http.HttpSession)</function-signature>
  </function>
 
  <function>
   <name>getSessionLoginAccount</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
-  <function-signature>net.bsp.manager.model.LoginAccount getSessionLoginAccount(javax.servlet.http.HttpSession)</function-signature>
+  <function-class>com.manager.common.web.Funcs</function-class>
+  <function-signature>com.manager.model.LoginAccount getSessionLoginAccount(javax.servlet.http.HttpSession)</function-signature>
  </function>
 
  
  
  <function>
   <name>formatDateTime</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
+  <function-class>com.manager.common.web.Funcs</function-class>
   <function-signature>java.lang.String formatDateTime(java.util.Date, java.lang.String)</function-signature>
  </function>
  
  <function>
   <name>getNextNumDate</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
+  <function-class>com.manager.common.web.Funcs</function-class>
   <function-signature>java.lang.String getNextNumDate(java.util.Date, java.lang.Integer, java.lang.String)</function-signature>
  </function>
  
  <function>
   <name>getDayOfWeekDate</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
+  <function-class>com.manager.common.web.Funcs</function-class>
   <function-signature>java.lang.String getDayOfWeekDate(java.lang.Integer, java.lang.String, java.lang.Integer)</function-signature>
  </function>
  
  <function>
   <name>roundDouble</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
+  <function-class>com.manager.common.web.Funcs</function-class>
   <function-signature>java.lang.String roundDouble(java.lang.Double, java.lang.Integer)</function-signature>
  </function>
  
  <function>
   <name>isContains</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
+  <function-class>com.manager.common.web.Funcs</function-class>
   <function-signature>java.lang.boolean isContains(java.lang.Object, java.util.List)</function-signature>
  </function>
  
  <function>
   <name>getRoleName</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
+  <function-class>com.manager.common.web.Funcs</function-class>
   <function-signature>java.lang.String getRoleName(java.lang.Long)</function-signature>
  </function>
  
  <function>
   <name>getMenuName</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
+  <function-class>com.manager.common.web.Funcs</function-class>
   <function-signature>java.lang.String getMenuName(java.lang.Long)</function-signature>
  </function> 
 
  <function>
   <name>getCityName</name>
-  <function-class>net.bsp.common.web.Funcs</function-class>
+  <function-class>com.manager.common.web.Funcs</function-class>
   <function-signature>java.lang.String getCityName(java.lang.Long)</function-signature>
  </function>
  

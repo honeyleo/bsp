@@ -20,8 +20,8 @@
     <!--
         - POJOs labeled with the @Controller and @Service annotations are auto-detected.
     -->
-    <context:component-scan base-package="net.bsp.manager.web"/>
-    <context:component-scan base-package="net.bsp.common.web"/>
+    <context:component-scan base-package="com.manager.web"/>
+    <context:component-scan base-package="com.manager.common.web"/>
     
     <!-- 数据格式化 -->
     <!-- 自定义conversionService，否则默认为time + number类型格式化 -->
@@ -66,6 +66,6 @@
     
 	
 	<!-- 异常处理 ??? -->
-	<bean id="adminExceptionHandler" class="net.bsp.common.exception.AdminExceptionHandler" />
+	<bean id="adminExceptionHandler" class="com.manager.common.exception.AdminExceptionHandler" />
 
 </beans>
