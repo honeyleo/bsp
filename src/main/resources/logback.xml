@@ -5,7 +5,6 @@
 	<!--  
 	<property name="USER_HOME" value="/log/airpush" />
 	-->
-	<property resource="global.properties" />
 	<!-- 输出到窗口 -->
 	<appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
 		<encoder>
@@ -17,7 +16,7 @@
 	<appender name="logfile" class="ch.qos.logback.core.rolling.RollingFileAppender">
 		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
 			<!-- 按天分文件夹存放 ，并压缩 -->
-			<fileNamePattern>${log.dir}/%d{yyyy-MM-dd}/log.%i.txt</fileNamePattern>
+			<fileNamePattern>${logback.dir}/%d{yyyy-MM-dd}/log.%i.txt</fileNamePattern>
 			<timeBasedFileNamingAndTriggeringPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">
 				<!-- 每个文件的最大值 5MB,超过则编号,生成新文件 -->
 				<maxFileSize>2MB</maxFileSize>
@@ -30,12 +29,12 @@
 		</encoder>
 	</appender>
 	
-	<logger name="java.sql.Connection" level="${log.level}" />
-	<logger name="java.sql.Statement" level="${log.level}" />
-	<logger name="java.sql.PreparedStatement" level="${log.level}" />
-	<logger name="org.springframework.web.servlet.mvc.method.annotation" level="${log.level}" />
+	<logger name="java.sql.Connection" level="${logback.level}" />
+	<logger name="java.sql.Statement" level="${logback.level}" />
+	<logger name="java.sql.PreparedStatement" level="${logback.level}" />
+	<logger name="org.springframework.web.servlet.mvc.method.annotation" level="${logback.level}" />
 	
-	<root level="${log.level}">
+	<root level="${logback.level}">
 		<appender-ref ref="stdout" />
 		<appender-ref ref="logfile" />
 	</root>

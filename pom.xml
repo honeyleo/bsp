@@ -208,6 +208,12 @@
 
 	<build>
 		<finalName>bsp</finalName>
+		<resources>
+			<resource>
+				<directory>${project.basedir}/src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -249,4 +255,30 @@
 			</plugins>
 		</pluginManagement>
 	</build>
+	<profiles>  
+        <profile>  
+            <id>dev</id>  
+            <activation>  
+                <activeByDefault>true</activeByDefault>  
+            </activation>  
+            <properties>  
+                <logback.dir>/log/bsp</logback.dir>
+                <logback.level>DEBUG</logback.level>  
+            </properties>  
+        </profile>  
+  		<profile>  
+            <id>test</id>  
+            <properties>  
+                <logback.dir>/log/bsp</logback.dir>
+                <logback.level>DEBUG</logback.level>  
+            </properties>  
+        </profile>  
+        <profile>  
+            <id>release</id>  
+            <properties>  
+                <logback.dir>/log/bsp</logback.dir>
+                <logback.level>INFO</logback.level>  
+            </properties>  
+        </profile>  
+    </profiles>
 </project>
