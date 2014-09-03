@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<settings>
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+	<typeAliases>
+	</typeAliases>
+	<mappers>
+		<!-- common -->
+		<mapper resource="com/manager/dao/mybatis/common_SqlMap.xml" />
+		
+		<mapper resource="com/manager/dao/mybatis/AdminDAO.xml" />
+		<mapper resource="com/manager/dao/mybatis/AdminMenuDAO.xml" />
+		<mapper resource="com/manager/dao/mybatis/MenuDAO.xml" />
+		<mapper resource="com/manager/dao/mybatis/RoleDAO.xml" />
+		<mapper resource="com/manager/dao/mybatis/RoleDefaultMenuDAO.xml" />
+		<mapper resource="com/manager/dao/mybatis/CityDAO.xml" />
+		
+	</mappers>
+</configuration>
