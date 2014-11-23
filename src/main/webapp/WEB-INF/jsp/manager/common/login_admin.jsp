@@ -16,15 +16,6 @@
     <meta http-equiv="expires" content="0">    
     <meta http-equiv="keywords" content="">
     <meta http-equiv="description" content="基础服务平台管理后台">
-    <script src="<%= basePath%>static/manager/js/jquery-1.4.4.min.js" type="text/javascript"></script>
-	<script type="text/javascript">
-	<!--
-	$(document).ready(function(){
-	  var pageContent=$("#login");
-	  $("#username", pageContent).focus();
-	})
-	//-->
-	</script>
   </head>
   
   <body>
@@ -58,7 +49,7 @@
         </form>
       </div>
       <div class="login_banner">
-        <img src="<%= basePath%>static/manager/themes/default/images/adm_login_banner.jpg" />
+        <img src="<%= basePath%>static/manager/images/adm_login_banner.jpg" />
       </div>
       <div class="login_main">
         

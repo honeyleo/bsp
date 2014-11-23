@@ -17,7 +17,6 @@
 
 <link href="<%= basePath%>static/manager/themes/default/style.css" rel="stylesheet" type="text/css" />
 <link href="<%= basePath%>static/manager/themes/css/core.css" rel="stylesheet" type="text/css" />
-<link href="<%= basePath%>static/manager/js/uploadify/uploadify.css" rel="stylesheet" type="text/css" />
 <!--[if IE]>
 <link href="themes/css/ieHack.css" rel="stylesheet" type="text/css" />
 <![endif]-->
@@ -26,60 +25,17 @@
 <link href="<%= basePath%>static/manager/css/tree_table.css" rel="stylesheet" />
 
 <script src="<%= basePath%>static/manager/js/speedup.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/jquery-1.4.4.min.js" type="text/javascript"></script>
+<script src="<%= basePath%>static/manager/js/jquery-1.7.2.js" type="text/javascript"></script>
 <script src="<%= basePath%>static/manager/js/jquery.cookie.js" type="text/javascript"></script>
 <script src="<%= basePath%>static/manager/js/jquery.validate.js" type="text/javascript"></script>
 <script src="<%= basePath%>static/manager/js/jquery.bgiframe.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/xheditor/xheditor-1.1.14-zh-cn.min.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/jquery.treeTable.js" type="text/javascript"></script>
 
-<script src="<%= basePath%>static/manager/js/uploadify/swfobject.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/uploadify/jquery.uploadify.v2.1.0.js" type="text/javascript"></script>
 
 <link rel="StyleSheet" href="<%= basePath%>static/manager/js/dtree/dtree.css" type="text/css" />
 <script type="text/javascript" src="<%= basePath%>static/manager/js/dtree/dtree.js"></script>
 
-<script src="<%= basePath%>static/manager/js/dwz.core.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.util.date.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.validate.method.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.regional.zh.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.barDrag.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.drag.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.tree.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.accordion.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.ui.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.theme.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.switchEnv.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.alertMsg.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.contextmenu.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.navTab.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.tab.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.resize.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.dialog.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.dialogDrag.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.cssTable.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.stable.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.taskBar.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.ajax.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.pagination.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.database.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.datepicker.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.effects.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.panel.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.checkbox.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.history.js" type="text/javascript"></script>
-<script src="<%= basePath%>static/manager/js/dwz.combox.js" type="text/javascript"></script>
-<!--
-<script src="bin/dwz.min.js" type="text/javascript"></script>
--->
 
-<!-- svg图表  supports Firefox 3.0+, Safari 3.0+, Chrome 5.0+, Opera 9.5+ and Internet Explorer 6.0+ -->
-<script type="text/javascript" src="<%= basePath%>static/manager/js/chart/raphael.js"></script>
-<script type="text/javascript" src="<%= basePath%>static/manager/js/chart/g.raphael.js"></script>
-<script type="text/javascript" src="<%= basePath%>static/manager/js/chart/g.bar.js"></script>
-<script type="text/javascript" src="<%= basePath%>static/manager/js/chart/g.line.js"></script>
-<script type="text/javascript" src="<%= basePath%>static/manager/js/chart/g.pie.js"></script>
-<script type="text/javascript" src="<%= basePath%>static/manager/js/chart/g.dot.js"></script>
+<script src="<%= basePath%>static/manager/js/dwz.min.js" type="text/javascript"></script>
 
 
 <script src="<%= basePath%>static/manager/js/dwz.regional.zh.js" type="text/javascript"></script>
