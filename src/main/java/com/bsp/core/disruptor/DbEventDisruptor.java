@@ -42,7 +42,7 @@ public class DbEventDisruptor {
 	
 	public void init(int thread) {
 		
-		buffer = RingBuffer.create(ProducerType.MULTI,
+		buffer = RingBuffer.create(ProducerType.SINGLE,
 				new DbEventFactory(), 1 << 10, new BlockingWaitStrategy());
 		
 		DbWorkHandler[] dbWorkHandlers = new DbWorkHandler[thread];
@@ -83,19 +83,19 @@ public class DbEventDisruptor {
 	public static void main(String args[]) {
 		final AtomicInteger n = new AtomicInteger(0);
 		int count = 0;
+		long start = System.currentTimeMillis();
 		for(int i = 0; i < 100000; i ++) {
 			DbEventDisruptor.publish(new Runnable() {
 				
 				@Override
 				public void run() {
-					boolean isDaemon = Thread.currentThread().isDaemon();
-					System.out.println("isDaemon = " + isDaemon);
 					LOG.info("task-" + n.getAndAdd(1));
 				}
 			});
 			count ++;
 		}
 		try {
+			LOG.info("cost={}", (System.currentTimeMillis() - start));
 			Thread.sleep(10000);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
