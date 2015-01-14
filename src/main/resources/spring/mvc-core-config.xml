@@ -22,6 +22,7 @@
     -->
     <context:component-scan base-package="com.manager.web"/>
     <context:component-scan base-package="com.manager.common.web"/>
+    <context:component-scan base-package="com.isales.web"/>
     
     <!-- 数据格式化 -->
     <!-- 自定义conversionService，否则默认为time + number类型格式化 -->
